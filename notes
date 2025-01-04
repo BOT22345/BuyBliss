@@ -1,10 +1,28 @@
-Step -1: 
+Step -1: BASIC STRUCTURE 
     ~Create the basic structure of HTML CSS and JS structure, 
-    - html files : index.html 
-    - js files : style.js 
-    - css files : style.css , skin1.css
-    - folders: assets, css/skins, js, pages
+      - html files : index.html 
+      - js files : style.js 
+      - css files : style.css , skin1.css
+      - folders: assets, css/skins, js, pages
 
-Step -2: 
-    ~
+Step -2: DARK MODE AND LIGHT MODE
+    ~ first set the padding and margin of all elements to 0 using universal selector 
+    ~ now for testing purpose create two buttons having inside as background white and background black and put class on them 
+      - <button id="whiteBgToggle">Background white</button>
+      - <button id="blackBgToggle">Background black</button>
+    ~ now in the script js file create a variable section and create two varaibles pointing to these buttons 
+      - let whiteBgToggle=document.getElementById("whiteBgToggle");
+      - let darkBgToggle=document.getElementById("darkBgToggle");
+    now divide the script into other section too functions and event listeners, in functions we will create two functions which are gonna add and remove the classes from body on being called 
+      - function bodyBgWhite(){
+        document.body.classList.remove('blackBg');
+        document.body.classList.add('whiteBg');}
+      - same way one more function for black background 
+    and we will also create two event listeners one for white and one for black button and put them on those two varaibles 
+      - whiteBgToggle.addEventListener("click",()=>{
+      - bodyBgWhite(); })
+      - same way for black button 
+    
+Step -3: STYLING DARK AND LIGHT BACKGROUND BUTTONS 
+
     
